@@ -55,9 +55,9 @@ request({url:url,xml:true},function (error,response,body) {
 
 
         app.get('/',function (req,res) {
-            res.set('Content-Type', 'application/rss+xml');
+           // res.set('Content-Type', 'application/rss+xml');
 
-            res.send(body);
+            res.send("hello");
 
 
         });
