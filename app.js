@@ -4,7 +4,6 @@
 var express=require('express');
 var bodyParser=require('body-parser');
 var app=express();
-//app.use(bodyParser.json());
 var PORT=process.env.PORT ||3000 ;
 var FeedParser = require('feedparser');
 var request = require('request');
@@ -63,8 +62,7 @@ request({url:url,xml:true},function (error,response,body) {
 app.get('/',function (req,res) {
     // res.set('Content-Type', 'application/rss+xml');
 
-    res.send("hello");
-
+    res.send('hello');
 
 });
 app.listen(PORT,function () {
