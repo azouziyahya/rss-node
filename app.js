@@ -50,20 +50,20 @@ request({url:url,xml:true},function (error,response,body) {
     }
     else
     {
-        //console.log(JSON.stringify(body,null,2));
+       console.log(JSON.stringify(body));
 
 
 
-        app.get('/',function (req,res) {
-           // res.set('Content-Type', 'application/rss+xml');
 
-            res.send("hello");
-
-
-        });
     }
 
+    app.get('/',function (req,res) {
+        // res.set('Content-Type', 'application/rss+xml');
 
+        res.send("hello");
+
+
+    });
 });
 
 
